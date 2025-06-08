@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alvin Shaji | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --white: #ffffff;
+      --red: #e53935;
+      --black: #1e1e1e;
+      --gray: #f4f4f4;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--gray);
+      color: var(--black);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: var(--white);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--black);
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover, nav a.active {
+      color: var(--red);
+    }
+
+    .section {
+      padding: 80px 40px;
+      max-width: 1000px;
+      margin: auto;
+      background: var(--white);
+      margin-bottom: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .section h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: var(--red);
+      text-align: center;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 160px 40px 100px;
+      background: linear-gradient(to right, #ffe8e7, #ffffff);
+    }
+
+    .hero h2 {
+      font-size: 4rem;
+      margin-bottom: 15px;
+      color: var(--red);
+      font-weight: 700;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      color: var(--black);
+      opacity: 0.8;
+    }
+
+    ul {
+      margin-top: 20px;
+      padding-left: 20px;
+    }
+
+    ul li {
+      line-height: 1.8;
+      font-size: 1rem;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-size: 1.5rem;
+      margin-top: 20px;
+    }
+
+    .contact-info a {
+      color: var(--black);
+      transition: color 0.3s;
+    }
+
+    .contact-info a:hover {
+      color: var(--red);
+    }
+
+    footer {
+      background: var(--white);
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--black);
+      border-top: 1px solid #ddd;
+    }
+
+    @media screen and (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .hero h2 {
+        font-size: 2.8rem;
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+      }
+
+      .contact-info {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div style="font-weight: 700; font-size: 1.2rem;">Alvin Shaji</div>
+    <nav>
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Alvin Shaji</h2>
+    <p>Software Engineer in the Making</p>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I’m Alvin Shaji, a Computer Science student at Amal Jyothi College of Engineering with a keen interest in Software Engineering. I’m currently focused on building strong problem-solving skills, seeking internship opportunities, and growing into a capable, reliable software engineer. I value curiosity, discipline, and being a strong team player.
+    </p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <p>
+      I'm currently developing a <strong>Smart Attendance System 💡</strong> using QR codes and facial recognition. The goal is to automate classroom attendance and generate real-time reports for both students and faculty. <br>Built using Python, OpenCV, and Firebase.
+    </p>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <p>Currently learning:</p>
+    <ul>
+      <li>HTML, CSS, JavaScript, Figma</li>
+      <li>Responsive Web Design</li>
+      <li>Python, C</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:alvinshaji2028@cs.ajce.in">alvinshaji2028@cs.ajce.in</a></p>
+    <div class="contact-info">
+      <a href="mailto:alvinshaji2028@cs.ajce.in" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/alvin-shaji-29754931b" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/alxviin_" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Alvin Shaji. All rights reserved.
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 100;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
